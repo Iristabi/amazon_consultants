@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="We are Amazon Consulting Experts and Amazon PPC Management Experts assisting brands maximize profits within Seller Central and Vendor Central." />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <title>Contact | AMZN Consultants</title>
+</head>
+<body>
+    <header class="secondary-pages">
+        <div id="navbar" class="second-navbar top">
+            <img src="img/amzn-win_fb2_white.png" alt="company's logo" id="logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                     <!-- dropdown-menu -->
+                    <li class="dropdown1"><a href="services.html">Services</a>
+                        <div class="dropdown-content1">
+                          <a href="amazon-ppc-management.html">Amazon PPC Management</a>
+                          <a href="amazon-consulting.html">Amazon Consulting</a>
+                          <a href="amazon-brand-protection.html">Amazon Brand Protection</a>
+                          </div>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- form -->
+    <div id="container">
+        <div class="form-wrap">
+          <h1 id="contact-form">Contact Us</h1>
+          <form>
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" name="firstName" id="first-name"/>
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" name="lastName" id="last-name"/>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+            </div>
+           
+            <div class="radio-button-group" id="radio-button-group">
+                <p class="radio-button">Do you currently sell on Amazon?</p>
+                <div class="radio-button-grid">
+                <label for="yes">Yes</label>
+                <input type="radio" id="radiobutton_yes" name="radiobutton" value="yes" onclick="isChecked()">
+                <label for="no">No</label>
+                <input type="radio" id="radiobutton_no" name="radiobutton" value="no" onclick="noIsChecked()">
+            </div>
+            </div>
+             <!-- invisible element 1-->
+             <div class="radio-button-group-1" id="radio-button-group-1">
+               <p class="radio-button">Are you currently enrolled in Amazon Brand Registry?</p> 
+               <div class="radio-button-grid">
+               <label for="yes">Yes</label>
+               <input type="radio" id="radio_button_yes" name="radio_button_1" value="yes">
+               <label for="no">No</label>
+               <input type="radio" id="radio_button_no" name="radio_button_1" value="no">
+              </div>
+             </div>
+            <!-- invisible element 2 -->
+             <div class="form-group" id="product_URL">
+                <label for="productURL">Product URL on Amazon (or Ecommerce site )</label>
+                <input type="productURL" name="productURL" id="productURL"/>
+              </div>
+              <!-- invisible element 3 -->
+              <div class="radio-button-group-options" id="radio-button-group-options">
+                <p class="radio-button">I do not sell on Amazon but</p>
+              <div class="radio-button-grid">
+                <label for="yes">I Sell Online through Ecommerce</label>
+                <input type="radio" id="radiobutton" name="radiobutton">
+              </div>
+            <div class="radio-button-grid">
+                <label for="no">I have a Product but Do Not Sell Online</label>
+                <input type="radio" id="radiobutton" name="radiobutton">
+            </div>
+            <div class="radio-button-grid">
+                <label for="no">I only Have a Product Idea</label>
+                <input type="radio" id="radiobutton" name="radiobutton">
+            </div>
+            </div>
+            <div class="form-group">
+              <label for="comments">Comments</label>
+              <textarea name="comments" id="comments"></textarea>
+            </div>
+            <button type="submit" class="btn button-text btn-gradient2">Get Quote</button>
+          </form>
+        </div>
+    </div>
+
+    <!--Footer  -->
+    <footer class="footer">
+        <p>&copy; 2021 AMZN Consultants | All Rights Reserved</p>
+    </footer>
+
+
+    <script>
+       function isChecked() {
+           if (document.getElementById('radiobutton_yes').checked){
+               document.getElementById('product_URL').style.display='block';
+               document.getElementById('radio-button-group-options').style.display='none';
+               document.getElementById('radio-button-group-1').style.display='block';
+           } else {
+            document.getElementById('product_URL').style.display='none';
+           }
+       }
+
+       function noIsChecked() {
+           if(document.getElementById('radiobutton_no').checked) {
+               document.getElementById('radio-button-group-options').style.display='block';
+               document.getElementById('product_URL').style.display='none';
+               document.getElementById('radio-button-group-1').style.display='none';     
+           } else {
+            document.getElementById('radio-button-group-options').style.display='none';
+           }
+       }
+    </script>
+
+        </body>
+        </html>

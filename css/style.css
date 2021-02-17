@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+
+:root {
+    --animate-speed: 1s;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background:	#f4f4f4f4;
+    color: var(--universal-dark);
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: orange;
+    text-decoration: none;
+}
+
+.l-heading {
+    text-align: center;
+    margin: 5rem 2rem auto auto;
+    font-weight: bold;
+    font-size: 40px;
+    color:#EF9D07;
+}
+
+.m-heading {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    color: var(--light-blue);
+}
+
+.xl-heading {
+    color: var(--light-blue);
+}
+
+h3 {
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+
+h1, h2 {
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--universal-dark);
+    color: 	#f6e8e8;
+    opacity: 0.8;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    padding: 0 30px;
+    transition: 0.5s;
+}
+
+.navbar.top {
+    background: transparent;
+}
+
+.navbar a {
+    color: 	#f6e8e8;
+    padding: 10px 20px;
+    margin: 0 5 px;
+}
+
+.navbar a:hover {
+    border-bottom:  #f9a02c 2px solid;
+}
+.navbar ul {
+    display: flex;
+}
+
+/* dropdown menu */
+.dropdown {
+    position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    box-shadow: 0px 0px 10px 0px rgba(65, 24, 24, 0.2);
+    z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+.dropdown-content a {
+    background: var(--universal-dark) 1;
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+/* logo animation */
+.navbar img {
+    height: 50%;
+    width: 10%;
+    position: relative;
+    transform: translateX(-1200px);
+}
+
+@keyframes heading {
+    to {transform: translateX(0px);}
+  }
+
+/* button animation */
+.btn-primary { 
+    background-image: var(--gradient);
+    background-size: 800% 800%;
+    /* animation: btn-gradient 2s forwards; */
+}
+
+ @keyframes btn-gradient {
+    0% {background-position: left}
+    100% {background-position: right}
+} 
+
+.btn-primary:hover,
+.fun:focus {
+ background-position: right;
+}
+
+.btn-gradient2 { 
+    background-image: var(--gradient);
+    background-size: 800% 800%;
+    animation: btn-gradient 5s infinite;
+}
+
+ @keyframes btn-gradient {
+    0% {background-position: left}
+    100% {background-position: right}
+} 
+
+.btn-primary:hover,
+.fun:focus {
+ background-position: right;
+}
+
+
+/* header */
+.hero {
+    background: url('../img/rupixen-com-Q59HmzK38eQ-unsplash.jpg') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+}
+
+.hero .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.hero .content h1 {
+    font-size: 40px;
+}
+
+.hero .content p {
+    font-size: 23px;
+    max-width: 600px;
+    margin: 10px 0 30px;
+}
+
+.hero::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8)
+}
+
+.hero *{
+    z-index: 10;
+}
+
+.hero.blog {
+    background: url('../img/rupixen-com-Q59HmzK38eQ-unsplash.jpg') no-repeat center center/cover;
+}
+
+/* PPC video section */
+.flex-columns .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.flex-columns .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.flex-columns .column .column-1,
+.flex-columns .column .column-2 {
+    height: 100%;
+}
+
+
+.flex-columns img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flex-columns .column-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px;
+    background: #f4f4f4f4;
+    color: var(--universal-dark);
+}
+
+.flex-columns h2 {
+    font-size: 40px;
+    font-weight: 100;
+    padding: 30px;
+    margin-top:-40px;
+}
+
+
+.column-2 ul {
+    list-style-type: square;
+}
+
+.column-2 ul > li {
+    line-height: 2.5;
+    font-size: 18px;
+}
+
+.column-2 a {
+    margin: 1rem auto;
+}
+
+iframe {
+    margin-left: 15px;
+}
+
+/* Flex-items */
+.flex-items {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    text-align: center;
+    height: 100%;
+}
+
+.flex-items > div {
+    padding: 0 40px;
+    margin: 30px 0;
+}
+
+/* Icons */
+.icons {
+    padding: 30px;
+}
+
+.icons h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+} 
+
+.icons i {
+    padding: 1rem;
+    margin-bottom: 15px;
+    color: orange;
+} 
+
+/* Blog posts section / main page */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 3rem;
+    text-align: center;
+    padding: 30px;
+}
+
+.item {
+    background: white;
+    padding: 1rem;
+    transition: transition .2s;
+}
+
+.item:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+
+.item img {
+    padding: 1.5rem;
+    height: 200px;
+    width: 240px;
+}
+
+
+
+/* free quote box main page*/
+.box {
+    box-sizing: border-box;
+    background: #222;
+    color: 	#f6e8e8;
+    opacity: 0.85;
+    text-align:center;
+    margin-top: 3rem;
+    height: 13rem;
+    padding: 2rem;
+}
+
+.box p{
+    font-size: 3rem;
+}
+
+
+
+/* About Page*/
+.about_heading{
+    text-align:center;
+    font-size: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+p[class="about_paragraph"] {
+    margin: 0 20%;
+    padding: 2rem;
+    background: white;
+    text-align: justify;
+    text-justify: inter-word;
+} 
+
+
+/* Contact  Page*/
+h1[id="contact-form"] {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+#container {
+    max-width: 560px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+.form-wrap {
+    padding: 50px 20px;
+    margin: 20px;
+    background: #f4f4f4;
+}
+
+.form-wrap h1 {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+.form-wrap .form-group {
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.form-wrap .form-group label {
+    display: block;
+    font-size: 16px;
+}
+
+.form-wrap .form-group input {
+    margin: auto;
+    padding: auto;
+    height: 2em;
+    border-radius: 3px;
+    width: 100%;
+}
+
+form {
+    box-sizing: border-box;
+    border: 1px solid var(--universal-dark);
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0;
+}
+
+.form-control {
+    padding: 5px;
+    border:none;
+}
+
+.form-wrap  input {
+    padding: 10px;
+    border: #ddd 1px solid;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+}
+
+.form-wrap button {
+    display: block;
+    margin: 10px auto;
+    padding: 5px auto;
+}
+
+#product_URL {
+    display: none;
+ }
+
+label:after , p[class="radio-button"]:after{
+    content: " *";
+    color: red;
+}
+
+p[class="radio-button"] {
+    font-size: 16px;
+}
+
+#radio-button-group {
+    margin-left: 10px;
+}
+
+#radio-button-group-options{
+    margin-left: 10px;
+    display:none;
+}
+
+#radio-button-group-1 {
+    margin-left: 10px;
+    display: none;
+}
+
+.radio-button-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    line-height: normal;
+    font-family: 'Open Sans';
+    font-weight: normal;
+}
+
+label[for="yes"]:after , label[for="no"]:after {
+    content: "";
+}
+
+
+
+/* Blog Page */
+.blog-heading{
+    text-align: center;
+    margin-top: 80px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#grid-blog > div {
+    background: white;
+    height: 330px;
+    padding: 1rem;
+    border-radius: .5rem;
+    transition: transition 2s;
+}
+
+#grid-blog > div:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+#grid-blog {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 5rem;
+    text-align: center;
+    padding: 0 10rem;
+    padding-top: 3rem;
+}
+
+.post-img {
+    max-width: 300px;
+    max-height: 200px;
+}
+
+.post-title {
+    font-size: 20px;
+}
+
+p[class="date"] {
+    font-size: 12px;
+    text-align: left;
+    font-family: sans-serif;
+    color: var(--secondary-color);
+}
+
+/* Blog inner pages */
+/* Clutch Names AMZN...Top PPC Management Companies */
+.post-heading {
+    text-align: left;
+    margin-top: 7rem; 
+    margin-left: 3rem;  
+}
+.grid-article-1:nth-child(2){
+    margin-top: .5rem;
+}
+
+.grid-article-1 > aside {
+    margin-top: 2rem;
+}
+
+
+.top-ppc-agency {
+    margin: 2rem 4rem;
+}
+
+.top-ppc-agency img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    width: 20rem;
+}
+
+.recent-posts > li {
+    margin: .7rem;
+}
+
+.fas {
+    color: grey;
+}
+
+/* Blog inner pages */
+
+/* Amazon-Reviews-Feedback */
+
+.feedback-reviews img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    width: 40rem;
+    padding: 2rem;
+}
+
+.feedback-reviews ul > li,
+.feedback-reviews ol > li{
+    margin-left: 3rem;
+}
+
+.feedback-reviews .instructions > li,
+.feedback-reviews ol > li {
+    font-weight: 400;
+}
+
+.recent-posts > li > a:hover{
+    color: var(--light-blue);
+}
+
+/* 3Steps to making your amazon title a cash earner */
+.amazon-title-3-steps .single-element > li{
+    list-style-type: disc;
+    margin-left: 4rem;
+    font-weight:400;
+}
+
+.amazon-title-3-steps ul > li{
+    list-style-type: disc;
+    margin-left: 4rem;
+    font-weight:600;
+}
+
+.amazon-title-3-steps ol > li {
+    margin-left: 4rem;
+    font-weight:400;
+    
+}
+
+.amazon-title-3-steps img {
+    width:60%;
+    display: block;
+    margin: 2rem auto;
+    padding: auto;
+}
+
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+}
+
+/* Amazon-PPC-Management */
+
+
+/* Amazon Consulting Page */
+.grid-article-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin:3rem;
+}
+
+ article {
+    text-align: justify;
+    text-justify: inter-word;
+    list-style-type: square;  
+ }
+
+ article > p {
+     font-weight: 400;
+ }
+ 
+ ul[class="amazon-consulting-services"] {
+    list-style-type: circle;
+    margin-left: 4rem;
+    font-weight: 400;
+ }
+
+
+ table {
+    font-weight: 400;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: -40px;
+  }
+
+  
+  td, th {
+    border: none;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #dddddd;
+  }
+
+/* Amazon Brand Protection Page */
+
+#amazon_brand_protection {
+    margin: 2% 20%;
+    padding: 2rem;
+    background: white;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+ul[class="brand-protection"] {
+    margin-left: 5rem;
+}
+
+ul[class="brand-protection"] li {
+    display: list-item;
+    list-style-type: circle;
+}
+
+
+
+
+
+

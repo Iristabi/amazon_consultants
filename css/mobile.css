@@ -1,0 +1,33 @@
+
+/* Tablets */
+@media (max-width: 800px) {
+    #logo {
+        width: 7rem;
+    }
+    .main_options {
+        margin-right: 5rem;
+    }
+    .flex-columns {
+        gap: none;
+        flex-direction:column;
+    }
+    .ppc-video {
+        margin-left: 6.5rem;
+    }
+
+    .column-2 > a {
+        margin-right: 16rem;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: inherit;
+    }
+    .box > p {
+        font-size: 2rem;
+    }
+
+    #grid-blog {
+        grid-template-columns: repeat(1, auto);
+    }
+}

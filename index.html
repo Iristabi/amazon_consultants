@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="We are Amazon Consulting Experts and Amazon PPC Management Experts assisting brands maximize profits within Seller Central and Vendor Central." />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="css/lightbox.min.css"> -->
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <title>AMZN Consultants | Amazon Consulting | Amazon PPC Management</title>
+
+</head>
+<body>
+    <header class="hero">
+        <div id="navbar" class="navbar top">
+            <img src="img/amzn-win_fb2_white.png" alt="company's logo" id="logo" class="logo">
+            <nav>
+                <ul class="main_options">
+                    <li><a href="index.html#home">Home</a></li>
+                     <!-- dropdown-menu -->
+                    <li class="dropdown" id="dropdown"><a href="index.html#services">Services</a>
+                        <div class="dropdown-content" id="dropdown-content">
+                            <a href="amazon-ppc-management.html">Amazon PPC Management</a>
+                            <a href="amazon-consulting.html">Amazon Consulting</a>
+                            <a href="amazon-brand-protection.html">Amazon Brand Protection</a>
+                          </div>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <h1 class="text-primary">Amazon PPC Management & Amazon Consulting</h1>
+            <p>Increase Your Amazon Sales-Delegate Your Amazon Headaches To Us</p>
+            <a href="contact.html" id="btn_primary" class="btn-primary">Learn More</a>
+        </div>
+
+    </header>
+
+    <main id="main_page">
+         <!-- Our Services Icons -->
+         <section id="about" class="icons">
+             <h2 class="m-heading">Our Services</h2> 
+            <div class="flex-items">
+                <div>
+                    <i class="fas fa-briefcase fa-3x"></i>
+                    <div>
+                        <h3>Amazon PPC Management</h3>
+                    </div>
+                </div>
+                <div>
+                    <i class="fas fa-building fa-3x"></i>
+                    <div>
+                        <h3>Amazon Consulting</h3>
+                    </div>
+                </div>
+                <div>
+                    <i class="fas fa-edit fa-3x"></i>
+                    <div>
+                        <h3>Amazon Account<br> Management Services</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PPC Management video -->
+            <section id="ppc-video" class="ppc-video flex-columns">
+                <div class="row">
+                    <div class="column">
+                        <div class="column-1">
+                                <iframe width="540" height="304" src="https://www.youtube.com/embed/U7c5NBhElsY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="column-2 bg-light">
+                            <h2>PPC Management</h2>
+                            <ul>
+                                <li>Month-to-month no long-term commitments</li>
+                                <li>Ideal for Small Brands & Manufacturers</li>
+                                <li>Delegate the Complexities of Amazon Sponsored Ads to Experts</li>
+                            </ul>
+                            <a href="contact.html" class="btn-primary btn-gradient2">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <!-- Blog -->
+        <section id="blog">
+        <h2 class="m-heading">Latest Posts</h2>
+            <div class="grid"> 
+                <div class="item">
+                    <img src="../img/clutch_logo_cropped.png" alt="">
+                    <h3>Clutch Names AMZN Consultants a Top PPC Agency in Ecommerce</h3>
+                </div>
+                <div class="item">
+                    <img src="../img/amazon_reviews_6-768x574.png" alt="">
+                    <h3>Managing Amazon Reviews & Feedback</h3>
+                </div>
+                <div class="item">
+                    <img src="../img/manufactuer-direct-via-amazon-262x300.jpg" alt="">
+                    <h3>Manufacturer Direct via Amazon (55% of Shoppers Search Amazon 1st)</h3>
+                </div>
+        </div>
+    </section>  
+        </main>
+        <!-- book free consultation bar -->
+        <section id="box">
+            <div class="box">
+                <p class="consulation">Book your free consultation now!</p>
+                <a class="btn-primary button-text btn-gradient2" href="contact.html">Get Quote</a>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2021 AMZN Consultants | All Rights Reserved</p>
+        </footer>
+        
+        <!-- navbar scroll -->
+        <script>
+            const navbar = document.getElementById('navbar');
+            let scrolled = false;
+    
+            window.onscroll = function() {
+                if(window.pageYOffset > 100) {
+                    navbar.classList.remove('top');
+                    if(!scrolled) {
+                        navbar.style.transform = 'translateY(-70px)';
+                    }
+                    setTimeout(function(){
+                        navbar.style.transform = 'translateY(0)';
+                        scrolled = true;
+                    }, 200);
+                } else {
+                    navbar.classList.add('top');
+                    scrolled = false;
+                }
+            };
+            
+           
+        
+            
+            
+        const logo = document.getElementById('logo');
+        const btn_primary = document.getElementById('btn_primary');
+
+        function animation(callback){logo.style.animation = "heading var(--animate-speed) forwards ease-in";
+        callback();
+         };
+
+
+         setTimeout (function(){btn_primary.style.animation = "btn-gradient 2s forwards";
+         }, 2000);
+
+         animation('logo', animation);
+         
+// change dropdown menu color
+var drop_cont = document.getElementsByClassName("dropdown-content");
+
+window.onscroll = function() {
+    if (window.pageYOffset > 100) {
+        drop_cont.classList.remove("dropdown-content");
+        drop_cont.classList.add("dropdown-content1");
+    } else {
+        drop_cont.classList.remove("dropdown-content");
+        drop_cont.classList.remove("dropdown-content1");
+    }
+
+    onScroll()  // Makes sure that the class is attached on the first render
+  return onScroll
+}();
+
+
+
+        </script>
+</body>
+</html>

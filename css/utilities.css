@@ -1,0 +1,154 @@
+/* text colors*/
+:root {
+    --primary-color:#383737;
+    --secondary-color: 	#696969;
+    --universal-dark: 	#020202;
+    --animate-speed: 1s;
+    --light-blue: #1887C7;
+    --gradient: linear-gradient(
+        90deg,
+        #EF9D07,
+        #EFBB29,
+        #D4D5D5,
+        #EFBB29,
+        #EF9D07,
+        #EFBB29
+    )
+}
+
+.my-1 { margin: 1rem;}
+.my-2 { margin: 2rem;}
+.my-3 { margin: 3rem;}
+.my-4 { margin: 4rem;}
+
+/* General Styles */
+
+html {
+    font-weight: bold;
+}
+
+.text-primary {
+    color: orange;
+}
+
+.text-secondary {
+    color: black;
+}
+
+
+b[class="bold"] {
+    font-weight: 600;
+}
+
+.button-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: (--universal-dark);
+}
+
+
+/* navbar */
+.second-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--universal-dark);
+    color: 	#f6e8e8;
+    opacity: 0.8;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    padding: 0 30px;
+    transition: 0.5s;
+}
+
+.second-navbar a {
+    color: 	#f6e8e8;
+    padding: 10px 20px;
+    margin: 0 5 px;
+}
+
+.second-navbar a:hover {
+    border-bottom:  #f9a02c 2px solid;
+}
+.second-navbar ul {
+    display: flex;
+}
+
+/* dropdown menu */
+.dropdown1 {
+    position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0, 0.2);
+    z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+.dropdown-content1 a {
+    background: var(--universal-dark) 0!important;
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+
+
+/* Show the dropdown menu on hover */
+.dropdown1:hover .dropdown-content1 {
+    display: block;
+  }
+
+
+/* logo animation */
+
+.second-navbar img {
+    height: 50%;
+    width: 10%;
+}
+
+
+/* button */
+.btn, .btn-primary, .btn-secondary {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 30px;
+    color:var(--universal-dark);
+    background-color: #f9a02c;
+    border: none;
+    border-radius: 5px;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 0.6;  
+}
+
+/* light themes */
+
+.bg-light {
+    background:	#f6e8e8;
+    color: #f9a02c;
+}
+
+.bg-dark {
+    background:#f9a02c;
+    color: 	#f6e8e8;
+}
+
+
+
+  
+
+
+
+
+
+
