@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
     <meta name="description" content="We are Amazon Consulting Experts and Amazon PPC Management Experts assisting brands maximize profits within Seller Central and Vendor Central." />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <!-- <link rel="stylesheet" href="css/lightbox.min.css"> -->
@@ -11,16 +11,40 @@
     <link rel="stylesheet" href="css/mobile.css">
     <title>AMZN Consultants | Amazon Consulting | Amazon PPC Management</title>
 
-</head>
+</head>  
 <body>
+<!-- hamburger -->
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+            <div>
+                <div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <header class="hero">
         <div id="navbar" class="navbar top">
+            
+
+            <!-- logo -->
             <img src="img/amzn-win_fb2_white.png" alt="company's logo" id="logo" class="logo">
+
+
             <nav>
                 <ul class="main_options">
                     <li><a href="index.html#home">Home</a></li>
                      <!-- dropdown-menu -->
-                    <li class="dropdown" id="dropdown"><a href="index.html#services">Services</a>
+                    <li class="dropdown" id="dropdown"><a href="index.html#about">Services</a>
                         <div class="dropdown-content" id="dropdown-content">
                             <a href="amazon-ppc-management.html">Amazon PPC Management</a>
                             <a href="amazon-consulting.html">Amazon Consulting</a>
@@ -30,7 +54,7 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                </ul>
+                </ul> 
             </nav>
         </div>
 
@@ -39,31 +63,39 @@
             <p>Increase Your Amazon Sales-Delegate Your Amazon Headaches To Us</p>
             <a href="contact.html" id="btn_primary" class="btn-primary">Learn More</a>
         </div>
-
     </header>
 
+   
     <main id="main_page">
          <!-- Our Services Icons -->
          <section id="about" class="icons">
              <h2 class="m-heading">Our Services</h2> 
             <div class="flex-items">
-                <div>
+                <div><a href="amazon-ppc-management.html">
                     <i class="fas fa-briefcase fa-3x"></i>
                     <div>
                         <h3>Amazon PPC Management</h3>
                     </div>
+                </a>
+                <p class="icon-text">Allow us–your Amazon PPC Management experts–to manage your campaigns for you.  That way you mitigate risk and save time that you can better devote toward operating your business.</p>
                 </div>
                 <div>
+                    <a href="amazon-consulting.html">
                     <i class="fas fa-building fa-3x"></i>
                     <div>
                         <h3>Amazon Consulting</h3>
                     </div>
+                </a>
+                    <p class="icon-text">Do you have project-based or custom Amazon consulting needs? If so we offer hourly Amazon consulting.</p>
                 </div>
                 <div>
+                    <a href="amazon-brand-protection.html">
                     <i class="fas fa-edit fa-3x"></i>
                     <div>
-                        <h3>Amazon Account<br> Management Services</h3>
+                        <h3>Amazon Brand Protection</h3>
                     </div>
+                   </a>
+                   <p class="icon-text">Combating attacks against your brand without assistance can be both complicated and costly.Contact us today to find out how we can immediately begin helping you to protect your brand.</p>
                 </div>
             </div>
         </section>
@@ -109,6 +141,17 @@
         </div>
     </section>  
         </main>
+<!-- for small devices -->
+        <aside id="recent-posts-main">
+            <h3 class="m-heading">Recent Posts</h3>
+            <ul class="recent-posts">
+            <li><i class="fas fa-chevron-right"></i><a href="clutch-names-amzn-consultants-a-top-ppc-agency-in-ecommerce.html"> Clutch Names AMZN Consultants a Top PPC Agency in Ecommerce</a></li>
+            <li><i class="fas fa-chevron-right"></i><a href="managing-amazon-reviews-feedback.html"> Managing Amazon Reviews & Feedback</a></li>
+            <li><i class="fas fa-chevron-right"></i><a href="manufacturer-direct-via-amazon-55-of-shoppers-search-amazon-1st.html"> Manufacturer Direct via Amazon (55% of Shoppers Search Amazon 1st)</a></li>
+            <li><i class="fas fa-chevron-right"></i><a href="3-steps-to-making-your-amazon-title-a-cash-earner.html"> 3 Steps to Making your Amazon Title a Cash Earner</a></li>
+           </ul>
+        </aside>
+
         <!-- book free consultation bar -->
         <section id="box">
             <div class="box">
@@ -121,6 +164,7 @@
             <p>&copy; 2021 AMZN Consultants | All Rights Reserved</p>
         </footer>
         
+
         <!-- navbar scroll -->
         <script>
             const navbar = document.getElementById('navbar');
@@ -143,7 +187,7 @@
             };
             
            
-        
+        // button animation after logo
             
             
         const logo = document.getElementById('logo');
@@ -158,25 +202,6 @@
          }, 2000);
 
          animation('logo', animation);
-         
-// change dropdown menu color
-var drop_cont = document.getElementsByClassName("dropdown-content");
-
-window.onscroll = function() {
-    if (window.pageYOffset > 100) {
-        drop_cont.classList.remove("dropdown-content");
-        drop_cont.classList.add("dropdown-content1");
-    } else {
-        drop_cont.classList.remove("dropdown-content");
-        drop_cont.classList.remove("dropdown-content1");
-    }
-
-    onScroll()  // Makes sure that the class is attached on the first render
-  return onScroll
-}();
-
-
-
         </script>
 </body>
 </html>

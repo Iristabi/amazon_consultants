@@ -1,5 +1,6 @@
 /* text colors*/
 :root {
+    --animate-speed: 1s;
     --primary-color:#383737;
     --secondary-color: 	#696969;
     --universal-dark: 	#020202;
@@ -76,36 +77,6 @@ b[class="bold"] {
 .second-navbar ul {
     display: flex;
 }
-
-/* dropdown menu */
-.dropdown1 {
-    position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content1 {
-    display: none;
-    position: absolute;
-    min-width: 250px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0, 0.2);
-    z-index: 1;
-  }
-
-  /* Links inside the dropdown */
-.dropdown-content1 a {
-    background: var(--universal-dark) 0!important;
-    color: white;
-    text-decoration: none;
-    display: block;
-  }
-
-
-/* Show the dropdown menu on hover */
-.dropdown1:hover .dropdown-content1 {
-    display: block;
-  }
-
 
 /* logo animation */
 

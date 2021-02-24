@@ -1,33 +1,300 @@
+/* PC desktop */
+@media screen and (min-width:1020px){
+    .menu-wrap {
+        display: none;
+    }
 
-/* Tablets */
-@media (max-width: 800px) {
-    #logo {
-        width: 7rem;
+    #recent-posts-main{
+        display: none;
     }
-    .main_options {
-        margin-right: 5rem;
+
+    .grid-article-1 {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+        margin: 3rem;
     }
+}
+
+/* tablets, small laptops */
+
+@media screen and (min-width:768px) and (max-width:1020px){
+    .menu-wrap {
+        display: none;
+    }
+    
+    #blog {
+        display: none;
+    }
+
+    #recent-posts-main {
+        display: block;
+    }
+
+    #grid-blog {
+        grid-template-columns: repeat(1, auto);
+    }
+
+    .grid-article-1 {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+    }
+
+    #form-inner-pages {
+        margin-top: -2rem;
+    }
+}
+
+/* phones and smaller devices */
+@media screen and (min-width:481px) and (max-width:767px),
+screen and (max-width:480px){
+    nav{
+        display: none;
+    }
+
+    .m-heading {
+        font-size: 2rem;
+    }
+
+    
+.hero .content  h1 {
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+
+}
+.content > p {
+    display: none;
+}
+
+.flex-items {
+        flex-direction: column;
+    }
+
+.flex-items > div {
+        border-bottom: 1px var(--secondary-color) dotted;
+    }
+
     .flex-columns {
-        gap: none;
-        flex-direction:column;
-    }
-    .ppc-video {
-        margin-left: 6.5rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .column-2 > a {
-        margin-right: 16rem;
+    iframe {
+        display: none;
+    }
+
+    .column-2 {
+        text-align: left;
+        margin-left: -11rem;
+    }
+
+    .column-2 > ul > li {
+        line-height: 1.5;
+        font-weight: 300;
+    }
+
+    #blog {
+        display: none;
+    }
+
+    #recent-posts-main {
+        display: block;
+    }
+
+    .box > p {
+        font-size: 3rem;
+    }
+
+    /* About page */
+    .about {
+        width: 40rem;
+        margin-left: -3rem;
+    }
+
+    /* Blog Page */
+
+    #grid-blog {
+        grid-template-columns: repeat(1, auto);
+        padding: 1rem 3rem;
     }
 
     .grid {
         display: grid;
         grid-template-columns: inherit;
     }
-    .box > p {
-        font-size: 2rem;
-    }
 
-    #grid-blog {
-        grid-template-columns: repeat(1, auto);
-    }
+    /* Amazon PPC Management Page */
+   .grid-article-1 {
+    grid-template-columns: repeat(1, auto);
+   }
+
+   .grid-article-1 > article > h2 {
+       text-align: center;
+   } 
+
+    /* navigation */
+   .menu-wrap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 500; }
+
+    .menu-wrap .menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+
+    .menu-wrap .menu > div {
+        background: #010013;
+        opacity: 0.9;
+        width: 200vw;
+        height: 200vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: scale(0);
+        transition: all 0.4s ease; }
+
+    .menu-wrap .menu > div > div {
+        text-align: center;
+        max-width: 90vw;
+        max-height: 100vh;
+        opacity: 0;
+        transition: opacity 0.4s ease; } 
+        
+    .menu-wrap .menu > div > div > ul > li {
+        font-size: 1.5rem;
+        padding: 1rem; }
+
+    .menu-wrap .menu > div > div > ul > li > a {
+        color: #fff;
+        text-decoration: none; }
+    .menu-wrap .menu > div > div > ul > li > a:hover {
+        color: #EFBB29; }
+    .menu-wrap .toggler {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        opacity: 0; }
+    .menu-wrap .toggler:checked ~ .menu {
+        visibility: visible; }
+    .menu-wrap .toggler:checked ~ .menu > div {
+        transform: scale(1);
+        transition-duration: 1s; }
+    .menu-wrap .toggler:checked ~ .menu > div > div {
+        opacity: 1;
+        transition: opacity 0.4s ease 0.4s; }
+    .menu-wrap .toggler:checked:hover + .hamburger > div {
+        transform: rotate(225deg); }
+    .menu-wrap .toggler:checked + .hamburger > div {
+        transform: rotate(135deg); }
+    .menu-wrap .toggler:checked + .hamburger > div:before, 
+    .menu-wrap .toggler:checked + .hamburger > div:after {
+        top: 0;
+        transform: rotate(90deg); }
+    .menu-wrap .hamburger {
+        position: absolute;
+        top: 0.7rem;
+        right: 0.7rem;
+        z-index: 1;
+        border: 1px solid #EFBB29;
+        border-radius: 7px;
+        width: 50px;
+        height: 50px;
+        padding: 0.7rem;
+        background: #010013;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+
+    .menu-wrap .hamburger > div {
+        position: relative;
+        flex: none;
+        width: 100%;
+        height: 2px;
+        background: #EFBB29;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease; }
+
+    .menu-wrap .hamburger > div:before,
+    .menu-wrap .hamburger > div:after {
+        content: '';
+        position: absolute;
+        z-index: 500;
+        top: -10px;
+        width: 100%;
+        height: 2px;
+        background: inherit; }
+
+    .menu-wrap .hamburger > div:after {
+        top: 10px; }
+
+        /* services list */
+  
+#serv-page {
+    background: var(--universal-dark);
 }
+
+.serv-container > .serv-list{
+    position: relative;
+     display: flex;
+     flex-direction:column;
+     margin-top: 8rem;
+     align-items: center;
+     line-height: 5rem;
+     font-size: x-large;
+}
+
+.serv-container > .serv-list > li > a {
+    color: #fff;
+}
+
+.serv-container > .serv-list > li > a:hover {
+    color: #EFBB29;
+}
+
+.serv-container {
+    text-align: center;
+}
+
+.serv-container > .serv-button {
+    margin-top: 3rem;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+    
