@@ -56,6 +56,9 @@ screen and (max-width:480px){
         font-size: 2rem;
     }
 
+    .l-heading {
+        font-size: 1.5rem;
+    }
     
 .hero .content  h1 {
     font-size: 2.3rem;
@@ -102,13 +105,13 @@ screen and (max-width:480px){
     }
 
     .box > p {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     /* About page */
     .about {
-        width: 40rem;
-        margin-left: -3rem;
+        width: 30rem;
+        margin-left: -4rem;
     }
 
     /* Blog Page */
@@ -136,7 +139,7 @@ screen and (max-width:480px){
    .menu-wrap {
     position: fixed;
     top: 0;
-    right: 0;
+    right: 2rem;
     z-index: 500; }
 
     .menu-wrap .menu {
@@ -241,8 +244,18 @@ screen and (max-width:480px){
 
     .menu-wrap .hamburger > div:after {
         top: 10px; }
+/* amazon brand protection page */
 
-        /* services list */
+.brand-protection {
+    margin-left: -3rem;
+    text-align: left;
+}
+
+#form-inner-pages {
+    margin-top: -2rem;
+}
+
+        /* services list page*/
   
 #serv-page {
     background: var(--universal-dark);

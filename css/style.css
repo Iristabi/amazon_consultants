@@ -48,6 +48,11 @@ a {
     color: var(--light-blue);
 }
 
+#navbar img {
+    height: 2rem;
+    width: 6rem;
+}
+
 h3 {
     font-size: 1.4rem;
     padding: 1rem;
@@ -337,7 +342,6 @@ iframe {
 }
 
 
-
 /* free quote box main page*/
 .box {
     box-sizing: border-box;
@@ -362,14 +366,8 @@ iframe {
     margin-bottom: 2rem;
 }
 
-/* .about {
-    display: block;
-    margin-right: 3rem;
-    margin-left: 3rem;
-} */
-
 p[class="about_paragraph"] {
-    margin: 0 20%;
+    margin: 0 7rem;
     padding: 2rem;
     background: white;
     text-align: justify;
@@ -527,7 +525,7 @@ input[type=radio] {
 }
 
 .post-img {
-    max-width: 300px;
+    max-width: 13rem;
     max-height: 200px;
 }
 
@@ -577,7 +575,6 @@ p[class="date"] {
     color: grey;
 }
 
-/* Blog inner pages */
 
 /* Amazon-Reviews-Feedback */
 
