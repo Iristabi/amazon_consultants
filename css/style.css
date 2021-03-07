@@ -104,6 +104,10 @@ img {
     display: flex;
 }
 
+a[class="logo"]:hover {
+    border: none;
+}
+
 /* dropdown menu */
 .dropdown {
     position: relative;
@@ -555,12 +559,7 @@ p[class="date"] {
     margin-top: 2rem;
 }
 
-
-.top-ppc-agency {
-    margin: 2rem 4rem;
-}
-
-.top-ppc-agency img{
+ img[class="top-ppc-agency"]{
     display: block;
   margin-left: auto;
   margin-right: auto;
@@ -578,7 +577,7 @@ p[class="date"] {
 
 /* Amazon-Reviews-Feedback */
 
-.feedback-reviews img{
+ img[class="feedback-reviews"]{
     display: block;
   margin-left: auto;
   margin-right: auto;
@@ -586,8 +585,7 @@ p[class="date"] {
     padding: 2rem;
 }
 
-.feedback-reviews ul > li,
-.feedback-reviews ol > li{
+ul[class="amazon-title"]{
     margin-left: 3rem;
 }
 
@@ -601,25 +599,25 @@ p[class="date"] {
 }
 
 /* 3Steps to making your amazon title a cash earner */
-.amazon-title-3-steps .single-element > li{
+.single-element > li{
     list-style-type: disc;
     margin-left: 4rem;
     font-weight:400;
 }
 
-.amazon-title-3-steps ul > li{
+ul[class="amazon-title-3-steps"] > li{
     list-style-type: disc;
     margin-left: 4rem;
     font-weight:600;
 }
 
-.amazon-title-3-steps ol > li {
+ol[class="amazon-title-3-steps"] > li {
     margin-left: 4rem;
     font-weight:400;
     
 }
 
-.amazon-title-3-steps img {
+ img[class="amazon-title-3-steps"] {
     width:60%;
     display: block;
     margin: 2rem auto;

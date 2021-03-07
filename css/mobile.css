@@ -69,6 +69,10 @@ screen and (max-width:480px){
     display: none;
 }
 
+article {
+    text-align: left;
+}
+
 .flex-items {
         flex-direction: column;
     }
@@ -132,8 +136,13 @@ screen and (max-width:480px){
    }
 
    .grid-article-1 > article > h2 {
-       text-align: center;
+       text-align: left;
    } 
+
+   img[class="feedback-reviews"] {
+    width: 18rem;
+    padding: 2rem;
+   }
 
     /* navigation */
    .menu-wrap {
