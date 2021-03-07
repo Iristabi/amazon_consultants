@@ -623,6 +623,9 @@ ol[class="amazon-title-3-steps"] > li {
     margin: 2rem auto;
     padding: auto;
 }
+img[class="shorter"] {
+    height: 60%;}
+
 
 
 /* Footer */
