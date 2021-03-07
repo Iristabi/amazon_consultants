@@ -618,13 +618,12 @@ ol[class="amazon-title-3-steps"] > li {
 }
 
  img[class="amazon-title-3-steps"] {
-    width:60%;
+    width: 30rem;
     display: block;
     margin: 2rem auto;
     padding: auto;
 }
-img[class="shorter"] {
-    height: 60%;}
+
 
 
 
