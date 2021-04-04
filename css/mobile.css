@@ -148,7 +148,7 @@ article {
    .menu-wrap {
     position: fixed;
     top: 0;
-    right: 2rem;
+    right: 1rem;
     z-index: 500; }
 
     .menu-wrap .menu {
