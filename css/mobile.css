@@ -263,6 +263,12 @@ article {
 #form-inner-pages {
     margin-top: -2rem;
 }
+    
+/* 3 steps in making your amazon title a money maker */
+img[class='amazon-title-3-steps']{
+    display: block;
+    width: 18rem;
+}
 
         /* services list page*/
   
