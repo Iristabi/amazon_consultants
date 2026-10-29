@@ -1,0 +1,5 @@
+---
+import media from '../data/media.json';
+const id=/^[a-zA-Z0-9_-]{11}$/.test(media.homeYoutubeId)?media.homeYoutubeId:null;
+---
+<div class="home-motion-video">{id?<iframe src={'https://www.youtube-nocookie.com/embed/'+id+'?playsinline=1&rel=0'} title="AMZN Consultants motion graphics" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"/>:<div class="video-awaiting"><svg aria-hidden="true" viewBox="0 0 64 64" width="60" height="60"><circle cx="32" cy="32" r="29" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M26 20 45 32 26 44Z" fill="currentColor"/></svg><span>Motion graphics video</span><small>Video link to be added</small></div>}</div>
